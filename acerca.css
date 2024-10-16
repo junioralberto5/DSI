@@ -45,7 +45,7 @@
 .image-container {
     width: 100%;
     height: 400px;
-    background: url('/img/portada\ 2.jpg') center/cover;
+    background: url('img/portada\ 2.jpg') center/cover;
     border-radius: 10px;
     position: relative;
 }
