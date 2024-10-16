@@ -15,7 +15,7 @@
         <nav>
             <a href="#" class="logo">DSI</a>
             <div class="nav-links">
-                <a href="Inicio.html">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="acerca.html">Acerca</a>
                 <a href="programas.html">Programas</a>
                 <a href="contacto.html">Contacto</a>
@@ -30,7 +30,6 @@
                 <p class="programs-subtitle">Formación integral en tecnologías de la información</p>
             </div>
 
-
             <div class="program-filters">
                 <button class="filter-btn active" data-filter="plan de estudio">Plan de estudio</button>
                 <button class="filter-btn" data-filter="horario">Horarios</button>
@@ -38,11 +37,11 @@
             </div>
 
             <div class="programs-grid">
-                <!-- Pan de estudio-->
-                <div class="program-card" data-category='plan de estudio'>
+                <!-- Ciclo 01 -->
+                <div id="ciclo-01" class="program-card" data-category='plan de estudio'>
                     <div class="program-card-header">
                         <i class="fas fa-laptop-code"></i>
-                        <h3> 01 CICLO</h3>
+                        <h3>01 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
@@ -66,25 +65,22 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 01 CICLO</h4>
-                                    <div class="semester-grid">
-                                        <!-- Contenido del plan de estudios -->
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Plan de estudio -->
-                <div class="program-card" data-category='plan de estudio'>
+                <!-- Ciclo 02 -->
+                <div id="ciclo-02" class="program-card" data-category='plan de estudio'>
                     <div class="program-card-header">
                         <i class="fas fa-brain"></i>
                         <h3>02 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
-                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <p>Especialización en el desarrollo de sistemas y bases de datos.</p>
                         <div class="program-details">
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -92,7 +88,7 @@
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Base de Datos </span>
+                                <span>Base de Datos</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -103,23 +99,22 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 02 CICLO</h4>
-                                    <div class="semester-grid">
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="program-card" data-category="plan de estudio">
+                <!-- Ciclo 03 -->
+                <div id="ciclo-03" class="program-card" data-category="plan de estudio">
                     <div class="program-card-header">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-code"></i>
                         <h3>03 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
-                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <p>Enfoque en desarrollo web y modelado de procesos de negocio.</p>
                         <div class="program-details">
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -127,7 +122,7 @@
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Desarrollo de Sistemas de Información </span>
+                                <span>Desarrollo de Sistemas de Información</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -138,23 +133,22 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 03 CICLO</h4>
-                                    <div class="semester-grid">
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="program-card" data-category="plan de estudio">
+                <!-- Ciclo 04 -->
+                <div id="ciclo-04" class="program-card" data-category="plan de estudio">
                     <div class="program-card-header">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-database"></i>
                         <h3>04 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
-                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <p>Integración de sistemas y administración de bases de datos avanzadas.</p>
                         <div class="program-details">
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -162,7 +156,7 @@
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Administración de Base de Datos </span>
+                                <span>Administración de Base de Datos</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -173,23 +167,22 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 04 CICLO</h4>
-                                    <div class="semester-grid">
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="program-card" data-category="plan de estudio">
+                <!-- Ciclo 05 -->
+                <div id="ciclo-05" class="program-card" data-category="plan de estudio">
                     <div class="program-card-header">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-mobile-alt"></i>
                         <h3>05 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
-                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <p>Desarrollo de aplicaciones móviles y gestión de proyectos.</p>
                         <div class="program-details">
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -197,7 +190,7 @@
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Ingeniería Web </span>
+                                <span>Ingeniería Web</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -208,31 +201,30 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 05 CICLO</h4>
-                                    <div class="semester-grid">
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="program-card" data-category="plan de estudio">
+                <!-- Ciclo 06 -->
+                <div id="ciclo-06" class="program-card" data-category="plan de estudio">
                     <div class="program-card-header">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-cloud"></i>
                         <h3>06 CICLO</h3>
                         <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
                     </div>
                     <div class="program-card-content">
-                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <p>Especialización en tecnologías avanzadas y proyectos de integración.</p>
                         <div class="program-details">
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Arquitectura Orientado a Servicios</span>
+                                <span>Arquitectura Orientada a Servicios</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Inteligencia Artificial </span>
+                                <span>Inteligencia Artificial</span>
                             </div>
                             <div class="detail-item">
                                 <i class="fas fa-check-circle"></i>
@@ -243,9 +235,7 @@
                             <button class="btn-plan">Ver Plan de Estudios</button>
                             <div class="program-modal">
                                 <div class="modal-content">
-                                    <h4>Plan de Estudios - 06 CICLO</h4>
-                                    <div class="semester-grid">
-                                    </div>
+                                    <!-- El contenido se llenará dinámicamente con JavaScript -->
                                 </div>
                             </div>
                         </div>
@@ -257,13 +247,13 @@
         <!--Horarios-->
         <div class="program-card" data-category='horario'>
             <div class="program-card-header">
-                <i class="fas fa-laptop-code"></i>
-                <h3> <b>HORARIOS</b></h3>
+                <i class="fas fa-calendar-alt"></i>
+                <h3>HORARIOS</h3>
             </div>
             <div class="program-card-content">
                 <div class="program-details">
                     <div class="author-image">
-                        <img src="/img/horario academico.jpg" alt="" width="1400px" height="950px">
+                        <img src="/img/horario academico.jpg" alt="Horario Académico" width="100%" height="auto">
                     </div>
                 </div>
             </div>
@@ -272,8 +262,8 @@
         <!--certificados-->
         <div class="program-card" data-category='certificado'>
             <div class="program-card-header">
-                <i class="fas fa-laptop-code"></i>
-                <h3> CERTIFICADO MODULAR</h3>
+                <i class="fas fa-certificate"></i>
+                <h3>CERTIFICADO MODULAR</h3>
             </div>
             <div class="program-card-content">
                 <p>Desde el primer año de estudios podrás trabajar gracias a las Certificaciones Modulares que
@@ -286,8 +276,7 @@
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-check-circle"></i>
-                        <span><b>SEGUNDO AÑO:</b> Implantación y Puesta en Producción de Sistemas de
-                            Información. </span>
+                        <span><b>SEGUNDO AÑO:</b> Implantación y Puesta en Producción de Sistemas de Información.</span>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-check-circle"></i>
@@ -295,15 +284,11 @@
                             Información.</span>
                     </div>
                     <p>Al terminar tu Programa de Estudios obtendrás el título a nombre de la nación de:
-
                         <b>PROFESIONAL TÉCNICO EN DESARROLLO DE SISTEMAS DE INFORMACIÓN</b>
                     </p>
                 </div>
             </div>
         </div>
-
-        <!-- Más programas aquí -->
-
 
         <div class="programs-benefits">
             <h3>Beneficios de Estudiar en DSI</h3>
@@ -343,7 +328,8 @@
             <div class="cta-content">
                 <h3>¿Listo para dar el siguiente paso?</h3>
                 <p>Únete a nuestra comunidad de innovadores tecnológicos</p>
-                <button class="cta-button" href="https://iestpmonfortianos.edu.pe/?page_id=4462">Proceso de Admisión</button>
+                <button class="cta-button" href="https://iestpmonfortianos.edu.pe/?page_id=4462">Proceso de
+                    Admisión</button>
             </div>
         </div>
     </section>

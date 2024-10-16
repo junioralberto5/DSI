@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
                 }, 100);
-            }else{
+            } else {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
                 setTimeout(() => {
@@ -40,141 +40,97 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Datos de ejemplo para planes de estudio
     const studyPlans = {
-       'plan de estudio': {
+        'ciclo-01': {
             title: 'Plan de Estudios - 01 CICLO',
-            semesters: [
-                {
-                    number: 1,
-                    subjects: [
-                        'Arquitectura y Mantenimiento de Equipos de Computación',
-                        'Análisis y Diseño de Sistemas',
-                        'Fundamentos de Programación',
-                        'Gestión del Aprendizaje',
-                        'Ofimática y Herramientas TIC',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
+            subjects: [
+                'Arquitectura y Mantenimiento de Equipos de Computación',
+                'Análisis y Diseño de Sistemas',
+                'Fundamentos de Programación',
+                'Gestión del Aprendizaje',
+                'Ofimática y Herramientas TIC',
             ]
         },
-        'plan de estudio': {
+        'ciclo-02': {
             title: 'Plan de Estudios - 02 CICLO',
-            semesters: [
-                {
-                    number: 2,
-                    subjects: [
-                        'Diseño y Programación de Aplicaciones',
-                        'Base de Datos',
-                        'Desarrollo de Aplicaciones',
-                        'Metodología de Desarrollo de Software',
-                        'Gestión Empresarial',
-                        'Habilidades Comunicativa',
-                        'Habilidades Numéricas',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
+            subjects: [
+                'Diseño y Programación de Aplicaciones',
+                'Base de Datos',
+                'Desarrollo de Aplicaciones',
+                'Metodología de Desarrollo de Software',
+                'Gestión Empresarial',
+                'Habilidades Comunicativas',
+                'Habilidades Numéricas',
             ]
         },
-        'plan de estudio': {
+        'ciclo-03': {
             title: 'Plan de Estudios - 03 CICLO',
-            semesters: [
-                {
-                    number: 3,
-                    subjects: [
-                        'Desarrollo de Aplicaciones Web',
-                        'Desarrollo de Sistemas de Información',
-                        'Modelado de Procesos de Negocio',
-                        'Investigación e Innovación Tecnológica',
-                        'Pruebas y Calidad de Software',
-                        'Ética, Ciudadanía y Globalización',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
+            subjects: [
+                'Desarrollo de Aplicaciones Web',
+                'Desarrollo de Sistemas de Información',
+                'Modelado de Procesos de Negocio',
+                'Investigación e Innovación Tecnológica',
+                'Pruebas y Calidad de Software',
+                'Ética, Ciudadanía y Globalización',
             ]
         },
-        'plan de estudio': {
+        'ciclo-04': {
             title: 'Plan de Estudios - 04 CICLO',
-            semesters: [
-                {
-                    number: 4,
-                    subjects: [
-                        'Integración de Sistemas Empresariales',
-                        'Administración de Base de Datos',
-                        'Inteligencia de Negocios',
-                        'Comunicación Efectiva',
-                        'Iniciativa Empresarial',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
+            subjects: [
+                'Integración de Sistemas Empresariales',
+                'Administración de Base de Datos',
+                'Inteligencia de Negocios',
+                'Comunicación Efectiva',
+                'Iniciativa Empresarial',
             ]
         },
-        'plan de estudio': {
+        'ciclo-05': {
             title: 'Plan de Estudios - 05 CICLO',
-            semesters: [
-                {
-                    number: 5,
-                    subjects: [
-                        'Desarrollo de Aplicaciones Móviles',
-                        'Ingeniería Web',
-                        'Gestión de Proyectos',
-                        'Infraestructura de Sistemas de Información',
-                        'Proyecto de Investigación',
-                        'Comunicación y Argumentación',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
-            ],
-        },
-        'plan de estudio': {
-            title: 'Plan de Estudios - 06 CICLO',
-            semesters: [
-                {
-                    number: 6,
-                    subjects: [
-                        'Arquitectura Orientado a Servicios',
-                        'Inteligencia Artificial',
-                        'Cloud Computing',
-                        'Proyecto de Integración de Sistemas Empresariales',
-                        'Laboratorio de Liderazgo',
-                    ]
-                },
-                // Añadir más semestres según sea necesario
+            subjects: [
+                'Desarrollo de Aplicaciones Móviles',
+                'Ingeniería Web',
+                'Gestión de Proyectos',
+                'Infraestructura de Sistemas de Información',
+                'Proyecto de Investigación',
+                'Comunicación y Argumentación',
             ]
         },
-
+        'ciclo-06': {
+            title: 'Plan de Estudios - 06 CICLO',
+            subjects: [
+                'Arquitectura Orientado a Servicios',
+                'Inteligencia Artificial',
+                'Cloud Computing',
+                'Proyecto de Integración de Sistemas Empresariales',
+                'Laboratorio de Liderazgo',
+            ]
+        },
     };
 
     // Función para generar el contenido del modal
-    function generateModalContent(programType) {
-        const plan = studyPlans[programType];
+    function generateModalContent(cycleId) {
+        const plan = studyPlans[cycleId];
         if (!plan) return '';
 
-        let content = `<h4>${plan.title}</h4><div class="semester-grid">`;
-
-        plan.semesters.forEach(semester => {
-            content += `
-                <div class="semester-block">
-                    <h5>Semestre ${semester.number}</h5>
-                    <ul>
-                        ${semester.subjects.map(subject => `<li>${subject}</li>`).join('')}
-                    </ul>
-                </div>
-            `;
+        let content = `<h4>${plan.title}</h4><div class="semester-block">`;
+        content += '<ul>';
+        plan.subjects.forEach(subject => {
+            content += `<li>${subject}</li>`;
         });
+        content += '</ul></div>';
 
-        content += '</div>';
         return content;
-    };
+    }
 
     // Event listeners para botones de plan de estudios
     planButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             const programCard = button.closest('.program-card');
-            const programType = programCard.dataset.category;
+            const cycleId = programCard.id; // Asumiendo que cada tarjeta tiene un id único como 'ciclo-01', 'ciclo-02', etc.
             const modal = programCard.querySelector('.program-modal');
 
             // Generar contenido del modal
             const modalContent = modal.querySelector('.modal-content');
-            modalContent.innerHTML = generateModalContent(programType);
+            modalContent.innerHTML = generateModalContent(cycleId);
 
             // Mostrar modal
             modal.style.display = 'block';
