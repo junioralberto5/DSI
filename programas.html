@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Sistemas de Información - DSI</title>
+    <link rel="stylesheet" href="programas.css">
+    <script src="programas.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">DSI</a>
+            <div class="nav-links">
+                <a href="Inicio.html">Inicio</a>
+                <a href="acerca.html">Acerca</a>
+                <a href="programas.html">Programas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="programs" id="programas">
+        <div class="programs-container">
+            <div class="programs-header">
+                <h2 class="section-title">Nuestros Programas Académicos</h2>
+                <p class="programs-subtitle">Formación integral en tecnologías de la información</p>
+            </div>
+
+
+            <div class="program-filters">
+                <button class="filter-btn active" data-filter="plan de estudio">Plan de estudio</button>
+                <button class="filter-btn" data-filter="horario">Horarios</button>
+                <button class="filter-btn" data-filter="certificado">Certificados</button>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Pan de estudio-->
+                <div class="program-card" data-category='plan de estudio'>
+                    <div class="program-card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3> 01 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Forma profesionales capaces de diseñar, desarrollar y mantener sistemas de software
+                            innovadores.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Arquitectura y Mantenimiento de Equipos de Computación</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Análisis y Diseño de Sistemas</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fundamentos de Programación</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 01 CICLO</h4>
+                                    <div class="semester-grid">
+                                        <!-- Contenido del plan de estudios -->
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan de estudio -->
+                <div class="program-card" data-category='plan de estudio'>
+                    <div class="program-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>02 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Diseño y Programación de Aplicaciones</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Base de Datos </span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Desarrollo de Aplicaciones</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 02 CICLO</h4>
+                                    <div class="semester-grid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="plan de estudio">
+                    <div class="program-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>03 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Desarrollo de Aplicaciones Web</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Desarrollo de Sistemas de Información </span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Modelado de Procesos de Negocio</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 03 CICLO</h4>
+                                    <div class="semester-grid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="plan de estudio">
+                    <div class="program-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>04 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Integración de Sistemas Empresariales</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Administración de Base de Datos </span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Inteligencia de Negocios</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 04 CICLO</h4>
+                                    <div class="semester-grid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="plan de estudio">
+                    <div class="program-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>05 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Desarrollo de Aplicaciones Móviles</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ingeniería Web </span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Gestión de Proyectos</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 05 CICLO</h4>
+                                    <div class="semester-grid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="plan de estudio">
+                    <div class="program-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>06 CICLO</h3>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 meses</span>
+                    </div>
+                    <div class="program-card-content">
+                        <p>Especialización en el desarrollo de sistemas inteligentes y aprendizaje automático.</p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Arquitectura Orientado a Servicios</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Inteligencia Artificial </span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Computing</span>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="btn-plan">Ver Plan de Estudios</button>
+                            <div class="program-modal">
+                                <div class="modal-content">
+                                    <h4>Plan de Estudios - 06 CICLO</h4>
+                                    <div class="semester-grid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Horarios-->
+        <div class="program-card" data-category='horario'>
+            <div class="program-card-header">
+                <i class="fas fa-laptop-code"></i>
+                <h3> <b>HORARIOS</b></h3>
+            </div>
+            <div class="program-card-content">
+                <div class="program-details">
+                    <div class="author-image">
+                        <img src="/img/horario academico.jpg" alt="" width="1400px" height="950px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--certificados-->
+        <div class="program-card" data-category='certificado'>
+            <div class="program-card-header">
+                <i class="fas fa-laptop-code"></i>
+                <h3> CERTIFICADO MODULAR</h3>
+            </div>
+            <div class="program-card-content">
+                <p>Desde el primer año de estudios podrás trabajar gracias a las Certificaciones Modulares que
+                    garantizan el logro de competencias profesionales.</p>
+                <div class="program-details">
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><b>PRIMER AÑO:</b> Desarrollo de la Construcción de Programas de Sistemas de
+                            Información.</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><b>SEGUNDO AÑO:</b> Implantación y Puesta en Producción de Sistemas de
+                            Información. </span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><b>TERCER AÑO:</b> Administración del Diseño Funcional de los Sistemas de
+                            Información.</span>
+                    </div>
+                    <p>Al terminar tu Programa de Estudios obtendrás el título a nombre de la nación de:
+
+                        <b>PROFESIONAL TÉCNICO EN DESARROLLO DE SISTEMAS DE INFORMACIÓN</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Más programas aquí -->
+
+
+        <div class="programs-benefits">
+            <h3>Beneficios de Estudiar en DSI</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Título Internacional</h4>
+                    <p>Reconocimiento y validez internacional de nuestros programas académicos.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Prácticas Garantizadas</h4>
+                    <p>Convenios con empresas líderes del sector tecnológico.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h4>Equipamiento Moderno</h4>
+                    <p>Acceso a laboratorios con tecnología de última generación.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Mentorías Personalizadas</h4>
+                    <p>Acompañamiento continuo en tu desarrollo profesional.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="programs-cta">
+            <div class="cta-content">
+                <h3>¿Listo para dar el siguiente paso?</h3>
+                <p>Únete a nuestra comunidad de innovadores tecnológicos</p>
+                <button class="cta-button" href="https://iestpmonfortianos.edu.pe/?page_id=4462">Proceso de Admisión</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: informes@iestpmonfortianos.edu.pe</p>
+                <p>Teléfono: 360-6007</p>
+                <p>Dirección: Carretera Central km. 18.5 Mz. I1 Lt. 2 Huascata - Chaclacayo</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <p><a href="#">Programas</a></p>
+                <p><a href="#">Admisiones</a></p>
+                <p><a href="#">Recursos</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Desarrollo de Sistemas de Información. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

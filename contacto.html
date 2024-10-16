@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - DSI</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="contacto.css">
+    <script src="contacto.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">DSI</a>
+            <div class="nav-links">
+                <a href="Inicio.html">Inicio</a>
+                <a href="acerca.html">Acerca</a>
+                <a href="programas.html">Programas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para responder tus dudas y ayudarte en tu camino hacia el éxito profesional</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Carretera Central km. 18.5 Mz. I1 Lt. 2 Huascata - Chaclacayo</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>360-6007</p>
+                        <p>948516869</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>informes@iestpmonfortianos.edu.pe</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 8:00 AM - 14:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envíanos un Mensaje</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="informacion">Información General</option>
+                            <option value="admisiones">Admisiones</option>
+                            <option value="programas">Programas Académicos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Encuéntranos</h2>
+            <div class="map-container">
+                <!-- Aquí iría el mapa, puedes usar Google Maps o una imagen placeholder -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.716824184041!2d-76.82144742493973!3d-11.994085688238606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105e9d12191914f%3A0x201ad65bdbcdafa9!2sIESTP%20MISIONEROS%20MONFORTIANOS!5e0!3m2!1ses-419!2spe!4v1728095074799!5m2!1ses-419!2spe" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email:  informes@iestpmonfortianos.edu.pe</p>
+                <p>Teléfono: 360-6007</p>
+                <p>Dirección: Carretera Central km. 18.5 Mz. I1 Lt. 2 Huascata - Chaclacayo</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <p><a href="#">Programas</a></p>
+                <p><a href="#">Admisiones</a></p>
+                <p><a href="#">Recursos</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Desarrollo de Sistemas de Información. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
