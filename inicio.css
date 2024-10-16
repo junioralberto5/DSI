@@ -81,7 +81,7 @@ nav {
     justify-content: center;
     text-align: center;
     padding: 6rem 1rem;
-    background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('/img/portada\ 2.jpg') center/cover;
+    background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('img/portada\ 2.jpg') center/cover;
 }
 
 .hero-content {
